@@ -19,7 +19,7 @@ The Note Management Dashboard is a web-based application for managing personal n
 
 3. No server setup is required as the application runs completely in the browser.
 
-##AI Support Explanation
+## AI Support Explanation
 
 - AI tools were used to assist in:
 
