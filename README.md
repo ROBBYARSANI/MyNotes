@@ -1,5 +1,5 @@
 # MyNotes
-The Note Management Dashboard is a web-based application for managing personal notes.
+MyNotes is a web-based application for managing personal notes.
 
 ## Technologies Used
 - **Frontend:** HTML, CSS, JavaScript
