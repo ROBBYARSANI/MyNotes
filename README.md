@@ -15,16 +15,16 @@ The Note Management Dashboard is a web-based application for managing personal n
    ```bash
    git clone https://github.com/your-repository-link
 
-Navigate to the project directory and open index.html in your browser.
+2. Navigate to the project directory and open index.html in your browser.
 
-No server setup is required as the application runs completely in the browser.
+3. No server setup is required as the application runs completely in the browser.
 
-AI Support Explanation
+##AI Support Explanation
 
-AI tools were used to assist in:
+- AI tools were used to assist in:
 
-Generating the project structure and design.
+- Generating the project structure and design.
 
-Solving responsiveness and CSS-related issues.
+- Solving responsiveness and CSS-related issues.
 
-Optimizing JavaScript code for localStorage functionality.
+- Optimizing JavaScript code for localStorage functionality.
