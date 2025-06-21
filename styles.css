@@ -1,0 +1,202 @@
+body {
+    width: 100%; /* Batasi lebar halaman */
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.dashboard {
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000; /* Warna latar belakang tetap */
+    color: #fff; /* Warna teks */
+    padding: 10px 20px; /* Padding yang sama */
+    position: sticky; /* Membuat header tetap terlihat saat scroll */
+    top: 0; /* Header akan tetap menempel di atas */
+    z-index: 1000; /* Pastikan header berada di depan elemen lain */
+    margin-bottom: 20px; /* Jarak bawah tetap */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan untuk estetika */
+}
+
+
+/*button {
+    padding: 10px 20px;
+    background-color: #D3D3D3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2C2C2C;
+}*/
+
+.create-note {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 100%; /* Batas maksimal agar tidak melebihi body */
+    width: 90%;
+    /*max-height: 600px;*/
+    background-color: transparent; /* Putih */
+    border-radius: 8px;
+    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);*/
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form input {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    font-size: 27px;
+    border: none; /* Hapus border */
+    border-bottom: 1px solid #CCC; /* Tambahkan garis bawah */
+    background-color: transparent; /* Hapus latar belakang */
+    outline: none;
+}
+
+form textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: none; /* Hapus border */
+    background-color: transparent; /* Hapus latar belakang */
+    outline: none;
+    height: 340px;
+    resize: none;
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: #B0B0B0; /* Abu-abu terang */
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    /*justify-content: flex-end; Posisikan tombol ke kanan */
+    width: 100%; /* Pastikan container penuh */
+}
+
+
+form button {
+    position: relative;
+    width: 100px;
+    background-color: #000; /* Hitam */
+    color: #FFF; /* Putih */
+    padding: 10px;
+    margin-right: 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #333; /* Abu-abu gelap */
+}
+
+#notesContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.note {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    box-sizing: border-box; /* Pastikan padding tidak memengaruhi ukuran */
+    max-width: 300px;
+}
+
+.note h3 {
+    margin: 0 0 10px 0;
+}
+
+.note p {
+    width: 100%; /* Pastikan lebar elemen menyesuaikan kontainer */
+    max-width: 300px; /* Atur batas maksimal lebar */
+    max-height: 100px; /* Atur batas maksimal tinggi */
+    overflow: hidden; /* Sembunyikan teks yang melampaui batas tinggi */
+    word-wrap: break-word; /* Pecah kata jika terlalu panjang */
+    white-space: normal; /* Izinkan teks membentuk baris baru */
+    /*display: block;  Pastikan elemen berbentuk blok */
+    display: -webkit-box; /* Gunakan kotak fleksibel untuk memotong berdasarkan baris *//* Batasi teks hingga 10 baris (atur sesuai kebutuhan) */
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 5; 
+    text-overflow: ellipsis; /* Tambahkan ellipsis \"...\" pada teks yang dipotong */
+}
+
+.note button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    right: 5px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.note button:hover {
+     background-color: #e2e2e2;
+}
+
+.note button img {
+    width: 24px; /* Atur lebar ikon */
+    height: 24px; /* Atur tinggi ikon */
+    object-fit: cover; /* Pastikan gambar sesuai proporsional */
+}
+
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #a8a8a8;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+
+.floating-btn:hover {
+    background-color: #575757;
+}
+
+.create-note {
+    padding: 0px;
+}
+
+header {
+    margin-bottom: 20px;
+}
