@@ -13,7 +13,7 @@ MyNotes is a web-based application for managing personal notes.
 ## Setup Instructions
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repository-link
+   git clone https://github.com/ROBBYARSANI/MyNotes
 
 2. Navigate to the project directory and open index.html in your browser.
 
