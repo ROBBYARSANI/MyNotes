@@ -101,7 +101,7 @@ form button {
     background-color: #000; /* Hitam */
     color: #FFF; /* Putih */
     padding: 10px;
-    margin-right: 30px;
+    /*margin-right: 10px;*/
     font-size: 16px;
     border: none;
     border-radius: 4px;
@@ -114,9 +114,11 @@ form button:hover {
 }
 
 #notesContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    /*grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));*/
     gap: 20px;
+    justify-content: center;
 }
 
 .note {
@@ -125,6 +127,7 @@ form button:hover {
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
+    flex: 1 1 calc(100% - 40px);
     box-sizing: border-box; /* Pastikan padding tidak memengaruhi ukuran */
     max-width: 300px;
 }
@@ -200,3 +203,4 @@ form button:hover {
 header {
     margin-bottom: 20px;
 }
+
